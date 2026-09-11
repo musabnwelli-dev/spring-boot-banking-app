@@ -10,6 +10,7 @@ Die Anwendung bietet grundlegende Bankfunktionen sowie Benutzerregistrierung, Au
 - Geld abheben
 - Geld zwischen Konten überweisen
 - Transaktionshistorie anzeigen
+- Kontostand anzeigen
 - Benutzer registrieren und anmelden
 - Passwörter mit BCrypt verschlüsseln
 - Datenbankbasierte Authentifizierung mit Spring Security
