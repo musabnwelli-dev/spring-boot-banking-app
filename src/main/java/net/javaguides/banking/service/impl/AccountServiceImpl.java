@@ -154,6 +154,15 @@ public class AccountServiceImpl implements AccountService
                 .toList();
     }
 
+    @Override
+    public double getBalance(Long id)
+    {
+        Account account = accountRepository.findById(id).
+                orElseThrow(() -> new AccountException("The account does not exist."));
+
+        return account.getBalance();
+    }
+
     private TransactionDto convertToTransactionDto(Transaction transaction)
     {
         return new TransactionDto(transaction.getId(),

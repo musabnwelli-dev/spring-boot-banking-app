@@ -150,5 +150,18 @@ public class AccountController
         return new ResponseEntity<>(transactions, HttpStatus.OK);
     }
 
+    /**
+     * Retrieves the balance of an account
+     * @param id the account ID
+     * @return the account's balance
+     */
+    @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
+    @GetMapping("/{id}/balance")
+    public ResponseEntity<String> getBalance(@PathVariable Long id)
+    {
+        double balance = accountService.getBalance(id);
+        return new ResponseEntity<>("Balance: " + balance, HttpStatus.OK);
+    }
+
 
 }

@@ -67,5 +67,12 @@ public interface AccountService
      */
     List<TransactionDto> getTransactions(Long accountId);
 
+    /**
+     * Retrieves the balance of the account
+     * @param id the account ID
+     * @return teh account's balance
+     */
+    double getBalance(Long id);
+
 
 }
