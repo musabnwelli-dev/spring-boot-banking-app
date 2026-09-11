@@ -67,6 +67,7 @@ src/main/java/net/javaguides/banking
 | DELETE | `/api/accounts/{id}` | Konto löschen |
 | POST | `/api/accounts/transfer` | Geld zwischen Konten überweisen |
 | GET | `/api/accounts/{id}/transactions` | Transaktionshistorie abrufen |
+| GET | `/api/accounts/{id}/balance` | Kontostand abrufen |
 
 ## Sicherheit
 
