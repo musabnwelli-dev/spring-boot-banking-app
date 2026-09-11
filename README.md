@@ -27,6 +27,7 @@ Die Anwendung bietet grundlegende Bankfunktionen sowie Benutzerregistrierung, Au
 - Spring Security
 - MySQL
 - Maven
+- Hibernate
 - Lombok
 - Postman (API-Testing)
 
